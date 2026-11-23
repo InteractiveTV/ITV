@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CTV-i</title>
+<base target="info">
+<style>
+body{margin:0;background:#63BDB5;color:#fff;font:14px/1.2}
+html,body{overflow:hidden}
+a{color:#fff} a:visited{color:#006B84} a:active{color:#CE007B}
+#page{position:relative;width:485px;height:1209px;margin:0 auto;overflow:visible}
+#squig{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+#squig path{fill:none;stroke:#e8e4a5;stroke-width:1.2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 12s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+h1{position:absolute;left:30px;top:20px;margin:0;font:bold 30px "Comic Sans MS","Comic Neue",cursive;letter-spacing:3px}
+.node{position:absolute;width:110px;text-align:center;text-decoration:none}
+.node span{display:block;text-decoration:underline;margin-top:2px}
+.orb{display:block;margin:0 auto;border-radius:50%;box-shadow:0 0 0 2px #fff,0 0 0 3px #006B84}
+.shine{position:absolute;width:31px;height:34px;fill:none;stroke:#fff;stroke-width:1.3;stroke-linecap:square}
+.shine .d1{animation:f1 .2s step-end infinite;animation-delay:inherit}
+.shine .d2{animation:f2 .2s step-end infinite;animation-delay:inherit}
+@keyframes f1{0%{opacity:1}25%{opacity:0}50%{opacity:1}75%{opacity:0}}
+@keyframes f2{0%{opacity:1}50%{opacity:0}}
+#home{position:absolute;bottom:6px;left:0;right:0;text-align:center}
+</style></head><body>
+<div id="page">
+<svg id="squig" viewBox="0 0 485 1209" preserveAspectRatio="none"><path pathLength="1" d="M68 160 C62 157 39 151 35 140 C31 129 36 111 45 95 C54 79 77 56 90 45 C103 34 115 30 125 32 C135 34 142 50 148 60 C154 70 149 84 158 95 C167 106 181 118 200 125 C219 132 247 138 270 140 C293 142 322 139 340 135 C358 131 378 122 378 115 C378 108 358 101 340 95 C322 89 292 85 270 80 C248 75 218 70 205 65 C192 60 191 57 195 52 C199 47 217 39 230 35 C243 31 264 28 275 30 C286 32 296 37 295 45 C294 53 264 75 270 78 C276 81 308 65 330 65 C352 65 383 72 400 80 C417 88 430 102 430 115 C430 128 417 147 400 160 C383 173 352 183 330 195 C308 207 290 212 270 230 C250 248 228 275 210 300 C192 325 175 352 165 380 C155 408 150 448 152 470 C154 492 162 512 175 515 C188 518 209 506 230 490 C251 474 277 447 300 420 C323 393 352 357 370 330 C388 303 398 275 405 260 C412 245 415 244 410 240 C405 236 393 232 375 235 C357 238 329 248 300 260 C271 272 227 297 200 305 C173 313 151 310 140 308 C129 306 128 306 135 295 C142 284 165 257 180 240 C195 223 216 207 225 195 C234 183 234 175 232 170 C230 165 229 160 215 165 C201 170 172 184 150 200 C128 216 97 238 80 260 C63 282 49 312 48 330 C47 348 63 358 75 365 C87 372 99 374 120 370 C141 366 172 352 200 340 C228 328 262 310 290 300 C318 290 354 279 370 277 C386 275 393 270 385 290 C377 310 342 368 320 400 C298 432 267 442 250 480 C233 518 218 610 218 628 C218 646 246 606 250 590 C254 574 247 538 240 530 C233 522 225 533 210 545 C195 557 170 581 150 600 C130 619 92 651 92 660 C92 669 137 660 150 655 C163 650 172 642 170 630 C168 618 155 603 140 585 C125 567 90 538 80 520 C70 502 70 495 78 480 C86 465 103 441 130 430 C157 419 205 414 240 415 C275 416 315 422 340 435 C365 448 383 472 390 490 C397 508 388 525 380 545 C372 565 351 584 340 610 C329 636 320 672 315 700 C310 728 311 763 312 780 C313 797 316 802 322 800 C328 798 334 790 345 770 C356 750 377 714 390 680 C403 646 417 578 425 565 C433 552 436 578 437 600 C438 622 436 663 430 700 C424 737 409 790 400 820 C391 850 392 858 375 880 C358 902 329 929 300 950 C271 971 230 990 200 1005 C170 1020 139 1035 120 1040 C101 1045 83 1044 88 1035 C93 1026 123 1004 150 985 C177 966 225 939 250 920 C275 901 292 883 300 870 C308 857 308 848 295 840 C282 832 249 822 220 824 C191 826 149 839 120 850 C91 861 60 879 45 890 C30 901 28 903 30 915 C32 927 49 950 60 960 C71 970 82 974 95 972 C108 970 127 965 140 950 C153 935 169 902 172 880 C175 858 170 835 160 820 C150 805 128 794 110 790 C92 786 64 789 50 795 C36 801 23 813 25 825 C27 837 46 856 60 865 C74 874 92 879 110 878 C128 877 153 873 170 860 C187 847 201 822 210 800 C219 778 220 756 225 730 C230 704 233 647 238 642 C243 637 248 664 255 700 C262 736 273 818 280 860 C287 902 291 943 297 950 C303 957 309 922 315 900 C321 878 329 822 335 815 C341 808 344 832 350 860 C356 888 364 952 370 980 C376 1008 378 1030 385 1030 C392 1030 402 997 410 980 C418 963 426 933 432 930 C438 927 444 943 444 960 C444 977 441 1007 430 1030 C419 1053 402 1082 380 1100 C358 1118 330 1126 300 1140 C270 1154 225 1176 200 1183 C175 1190 161 1186 150 1180 C139 1174 133 1162 135 1150 C137 1138 142 1120 160 1110 C178 1100 218 1093 240 1090 C262 1087 290 1088 295 1090 C300 1092 294 1096 270 1100 C246 1104 186 1110 150 1113 C114 1116 72 1119 57 1120"/></svg>
+<h1>CTV-i</h1>
+<svg class="shine" style="left:40px;top:40px;animation-delay:-0.1s" viewBox="-17 -17 34 34" aria-hidden="true"><path d="M0-15V15M-15 0H15"/><path class="d1" d="M-10.6 10.6L10.6-10.6"/><path class="d2" d="M-10.6-10.6L10.6 10.6"/></svg>
+<svg class="shine" style="left:410px;top:110px;animation-delay:-0.4s" viewBox="-17 -17 34 34" aria-hidden="true"><path d="M0-15V15M-15 0H15"/><path class="d1" d="M-10.6 10.6L10.6-10.6"/><path class="d2" d="M-10.6-10.6L10.6 10.6"/></svg>
+<svg class="shine" style="left:350px;top:200px;animation-delay:-0.2s" viewBox="-17 -17 34 34" aria-hidden="true"><path d="M0-15V15M-15 0H15"/><path class="d1" d="M-10.6 10.6L10.6-10.6"/><path class="d2" d="M-10.6-10.6L10.6 10.6"/></svg>
+<svg class="shine" style="left:30px;top:230px;animation-delay:-0.5s" viewBox="-17 -17 34 34" aria-hidden="true"><path d="M0-15V15M-15 0H15"/><path class="d1" d="M-10.6 10.6L10.6-10.6"/><path class="d2" d="M-10.6-10.6L10.6 10.6"/></svg>
+<svg class="shine" style="left:95px;top:330px;animation-delay:-0.3s" viewBox="-17 -17 34 34" aria-hidden="true"><path d="M0-15V15M-15 0H15"/><path class="d1" d="M-10.6 10.6L10.6-10.6"/><path class="d2" d="M-10.6-10.6L10.6 10.6"/></svg>
+<svg class="shine" style="left:35px;top:440px;animation-delay:-0.15s" viewBox="-17 -17 34 34" aria-hidden="true"><path d="M0-15V15M-15 0H15"/><path class="d1" d="M-10.6 10.6L10.6-10.6"/><path class="d2" d="M-10.6-10.6L10.6 10.6"/></svg>
+<svg class="shine" style="left:420px;top:520px;animation-delay:-0.45s" viewBox="-17 -17 34 34" aria-hidden="true"><path d="M0-15V15M-15 0H15"/><path class="d1" d="M-10.6 10.6L10.6-10.6"/><path class="d2" d="M-10.6-10.6L10.6 10.6"/></svg>
+<svg class="shine" style="left:385px;top:630px;animation-delay:-0.35s" viewBox="-17 -17 34 34" aria-hidden="true"><path d="M0-15V15M-15 0H15"/><path class="d1" d="M-10.6 10.6L10.6-10.6"/><path class="d2" d="M-10.6-10.6L10.6 10.6"/></svg>
+<svg class="shine" style="left:435px;top:700px;animation-delay:-0.05s" viewBox="-17 -17 34 34" aria-hidden="true"><path d="M0-15V15M-15 0H15"/><path class="d1" d="M-10.6 10.6L10.6-10.6"/><path class="d2" d="M-10.6-10.6L10.6 10.6"/></svg>
+<svg class="shine" style="left:130px;top:800px;animation-delay:-0.25s" viewBox="-17 -17 34 34" aria-hidden="true"><path d="M0-15V15M-15 0H15"/><path class="d1" d="M-10.6 10.6L10.6-10.6"/><path class="d2" d="M-10.6-10.6L10.6 10.6"/></svg>
+<svg class="shine" style="left:400px;top:790px;animation-delay:-0.12s" viewBox="-17 -17 34 34" aria-hidden="true"><path d="M0-15V15M-15 0H15"/><path class="d1" d="M-10.6 10.6L10.6-10.6"/><path class="d2" d="M-10.6-10.6L10.6 10.6"/></svg>
+<a class="node" style="left:20px;top:76px" href="ctviinfo.html#history"><img class="orb" src="images/ctvi-history.png" width="71" height="71" alt=""><span>history</span></a>
+<a class="node" style="left:140px;top:160px" href="ctviinfo.html#response-television"><img class="orb" src="images/ctvi-response-television.png" width="71" height="71" alt=""><span>response television</span></a>
+<a class="node" style="left:270px;top:244px" href="ctviinfo.html#revival-efforts"><img class="orb" src="images/ctvi-revival-efforts.png" width="71" height="71" alt=""><span>revival efforts</span></a>
+<a class="node" style="left:60px;top:328px" href="ctviinfo.html#choose-your-own-adventures"><img class="orb" src="images/ctvi-choose-your-own-adventures.png" width="71" height="71" alt=""><span>choose your own adventures</span></a>
+<a class="node" style="left:170px;top:412px" href="ctviinfo.html#found-screens"><img class="orb" src="images/ctvi-restored-screens.png" width="71" height="71" alt=""><span>found screens</span></a>
+<a class="node" style="left:280px;top:496px" href="ctviinfo.html#updates"><img class="orb" src="images/ctvi-updates.png" width="71" height="71" alt=""><span>updates</span></a>
+<a class="node" style="left:50px;top:580px" href="ctviinfo.html#contact"><img class="orb" src="images/ctvi-contact.png" width="71" height="71" alt=""><span>contact</span></a>
+<!--
+<a class="node" style="left:280px;top:496px" href="ctviinfo.html#amiga-recreation"><img class="orb" src="images/ctvi-amiga-recreation.png" width="71" height="71" alt=""><span>amiga recreation</span></a>
+<a class="node" style="left:50px;top:580px" href="ctviinfo.html#playable-version"><img class="orb" src="images/ctvi-playable-version.png" width="71" height="71" alt=""><span>playable version</span></a>
+<a class="node" style="left:160px;top:664px" href="ctviinfo.html#updates"><img class="orb" src="images/ctvi-updates.png" width="71" height="71" alt=""><span>updates</span></a>
+<a class="node" style="left:275px;top:748px" href="ctviinfo.html#contact"><img class="orb" src="images/ctvi-contact.png" width="71" height="71" alt=""><span>contact</span></a>
+--!>
+<div id="home" style="top:850px"><a href="page1~1.html" target="_top">home</a></div>
+</div>
+</body></html>
