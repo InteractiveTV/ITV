@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>CTV-i info</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#63BDB5; --deep:#006B84; --magenta:#CE007B; --navy:#000033;
+  --cream:#e8e4a5; --paper:#f7f5dc;
+  --display:"Comic Sans MS","Comic Neue",cursive;
+  --body:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; color:var(--navy); font:16px/1.65 var(--body);
+  background: var(--teal);
+  background-attachment:fixed;
+}
+#wrap{max-width:720px;margin:0;padding:28px 128px 28px 28px}
+a{color:var(--deep);text-decoration-thickness:1px;text-underline-offset:3px}
+a:visited{color:var(--deep)}
+a:hover{color:var(--magenta)}
+a:active{color:var(--magenta)}
+
+/* logo */
+.logo{display:block;max-width:100%;margin:0 auto 34px}
+
+/* sections */
+section{margin:0 0 38px;counter-increment:card;scroll-margin-top:18px}
+h1{
+  display:flex;align-items:center;gap:10px;margin:0 0 12px;
+  font:bold 30px/1.1 var(--display);letter-spacing:3px;color:#fff;
+}
+h1::after{ /* Response Television style card id, e.g. A1 */
+  content:"A" counter(card);margin-left:auto;
+  font:600 12px/1 var(--body);letter-spacing:1.5px;
+  color:var(--deep);background:var(--cream);
+  padding:5px 8px;border-radius:99px;
+  box-shadow:0 0 0 2px #fff,0 0 0 3px var(--deep);
+}
+.shine{width:31px;height:34px;flex:none;fill:none;stroke:#fff;stroke-width:1.4;stroke-linecap:square;
+  filter:drop-shadow(0 1px 0 var(--deep))}
+.shine .d1{animation:f1 .2s step-end infinite}
+.shine .d2{animation:f2 .2s step-end infinite}
+@keyframes f1{0%{opacity:1}25%{opacity:0}50%{opacity:1}75%{opacity:0}}
+@keyframes f2{0%{opacity:1}50%{opacity:0}}
+
+.panel{
+  background:var(--paper);border-radius:18px;padding:20px 24px;
+  box-shadow:0 0 0 2px #fff,0 0 0 3px var(--deep),0 10px 24px -10px rgba(0,51,102,.45);
+}
+.panel p{margin:0}
+.panel p+p{margin-top:12px}
+.soon{font-style:italic;color:var(--deep)}
+.soon::before{content:"\2733\00a0";color:var(--teal);font-style:normal}
+
+/* slideshow: same card as everything else */
+figure.slideshow{
+  margin:-18px auto 44px;padding:10px 12px 8px;width:86%;
+  border-radius:14px;box-shadow:0 0 0 1px var(--deep),0 6px 14px -8px rgba(0,51,102,.4);
+}
+.slides{display:flex;align-items:center;justify-content:center;gap:12px}
+.screen{flex:1;min-width:0;display:flex;justify-content:center}
+.slides img{display:block;max-width:100%;height:auto;min-width:0;border-radius:8px;
+  box-shadow:0 0 0 2px #fff,0 0 0 3px var(--deep)}
+.slides button{
+  all:unset;cursor:pointer;flex:none;width:36px;height:36px;border-radius:50%;
+  display:grid;place-items:center;color:var(--navy);
+  font:700 20px/1 var(--display);
+  background:var(--cream);box-shadow:0 0 0 2px #fff,0 0 0 3px var(--deep);
+  transition:transform .15s,background .15s;
+}
+.slides button:hover{background:#fff;transform:scale(1.08)}
+.slides button:active{background:var(--magenta);color:#fff}
+.slides button:focus-visible{outline:2px dotted #fff;outline-offset:3px}
+figcaption{
+  margin:10px 4px 2px;color:var(--navy);font-size:13px;line-height:1.4;
+  display:flex;gap:10px;align-items:baseline;justify-content:center;text-align:center;
+}
+figcaption .count{flex:none;font:600 12px/1 var(--body);letter-spacing:1px;
+  background:var(--cream);color:var(--deep);padding:4px 8px;border-radius:99px;
+  box-shadow:0 0 0 2px #fff,0 0 0 3px var(--deep)}
+
+@media (max-width:480px){
+  #wrap{padding:20px 14px 60px}
+  h1{font-size:27px}
+  .panel{padding:16px 18px}
+  .slides button{width:30px;height:30px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .shine .d1,.shine .d2{animation:none}
+}
+</style></head><body><div id="wrap">
+<img class="logo" src="images/ctvlogo.png" alt="CTV-i">
+
+<section><h1 id="history"><svg class="shine" viewBox="-17 -17 34 34" aria-hidden="true"><path d="M0-15V15M-15 0H15"/><path class="d1" d="M-10.6 10.6L10.6-10.6"/><path class="d2" d="M-10.6-10.6L10.6 10.6"/></svg>history</h1>
+<div class="panel"><p>Staten Island Community Television (SICTV) was founded in 1983. Its interactive channel (CTVi) started in 1992 and ran until 2000. Broadcast on channel 56 in Staten Island, New York, the interactive channel allowed viewers to call in live to play games, vote in polls, and receive real-time community information. Calling the local number 727-0235 would give viewers control over the channel, giving them access to nested menus with 3500+ screens. This website is modeled after their 1998 era website! Check out some of the images of the studio around that time that have been recovered through the Wayback Machine:</p></div>
+</section>
+
+<figure class="slideshow panel">
+  <div class="slides">
+    <button onclick="go(-1)" aria-label="previous">&lt;</button>
+    <div class="screen"><img id="slide" src="images/control.gif" alt="This is CTV’s studio control room."></div>
+    <button onclick="go(1)" aria-label="next">&gt;</button>
+  </div>
+  <figcaption><span class="count" id="count">1/8</span><span id="cap">This is CTV’s studio control room.</span></figcaption>
+</figure>
+<script>
+const pics = [
+  ["images/control.gif",  "This is CTV’s studio control room."],
+  ["images/edit1.gif",    "This is off-line Edit 1. It contains Hi8 and 3/4 capabilities."],
+  ["images/edit2.gif",    "This is off-line Edit 2. It contains SVHS and 3/4 capabilities."],
+  ["images/edit3.gif",    "This is off-line Edit 3. It contains SVHS and 3/4 capabilities."],
+  ["images/graphics.gif", "This is where CTV producers prepare graphics for their shoots."],
+  ["images/elecrm.gif",     "This is CTV’s electronics room."],
+  ["images/library.gif",  "This is CTV’s tape library."],
+  ["images/equip.gif",    "This is Staten Island Community Television’s equipment room."]
+];
+let n = 0;
+pics.forEach(p => new Image().src = p[0]);   // preload, just like '98
+function go(d) {
+  n = (n + d + pics.length) % pics.length;
+  slide.src = pics[n][0];
+  slide.alt = pics[n][1];
+  cap.textContent = pics[n][1];
+  count.textContent = (n + 1) + "/" + pics.length;
+}
+</script>
+
+<section><h1 id="response-television"><svg class="shine" viewBox="-17 -17 34 34" aria-hidden="true"><path d="M0-15V15M-15 0H15"/><path class="d1" d="M-10.6 10.6L10.6-10.6"/><path class="d2" d="M-10.6-10.6L10.6 10.6"/></svg>RESPONSE TELEVISON</h1>
+<div class="panel"><p>Channel 56 ran on an Amiga 2000 using a program called Response Television. Made by the Response Television Corporation in Iowa City, a signature of the program was the “Shot Clock” bar at the top of the screen when calling in that would limit your time in the system and the amount of time you had to input a choice shown on the screen. The RT program was a Hypercard-like program that categorized its cards with the routes (for example, a card that was the first choice in 3 subsequent menus would be named “A111”) and used the Amiga Say command for the phone inputs. Other interactive information channels like Iowa City Public Access, Contra Costa County Public Access, and Miami Valley Ohio’s Quest TV all ran on Response Television software.</p></div>
+</section>
+
+<section><h1 id="revival-efforts"><svg class="shine" viewBox="-17 -17 34 34" aria-hidden="true"><path d="M0-15V15M-15 0H15"/><path class="d1" d="M-10.6 10.6L10.6-10.6"/><path class="d2" d="M-10.6-10.6L10.6 10.6"/></svg>REVIVAL EFFORTS</h1>
+<div class="panel"><p>Revival efforts have been numerous. I have contacted the creator of Response Television, Staten Island Community Media, various television channels that also used Response Television, have run scans of the Wayback Machine and tried to dig through the 2009 Geocities Torrent to try and find the few remains of this channel. We're making headway but any help or leads are welcome! If you have ANY information, please <a href="#contact">reach out via email</a>.</p></div>
+</section>
+
+<section><h1 id="choose-your-own-adventures"><svg class="shine" viewBox="-17 -17 34 34" aria-hidden="true"><path d="M0-15V15M-15 0H15"/><path class="d1" d="M-10.6 10.6L10.6-10.6"/><path class="d2" d="M-10.6-10.6L10.6 10.6"/></svg>CHOOSE YOUR OWN ADVENTURES</h1>
+<div class="panel"><p>By far the most beloved part of CTV-i, three choose your own adventures (The Adventure of You, Your Haunted Adventure, and a Space adventure with a name lost to time) were a popular pastime for Staten Islanders in the 90s. We currently have a WIP script for two of the three adventures, <a href="https://docs.google.com/document/d/1oWh2NTbGiWwqCyvkW23WU_UbUnci3jGA0wXzeLZbD-0/edit?usp=drive_link">check it out here</a> and let us know if you can fill in any blanks!</p></div>
+</section>
+
+<section><h1 id="found-screens"><svg class="shine" viewBox="-17 -17 34 34" aria-hidden="true"><path d="M0-15V15M-15 0H15"/><path class="d1" d="M-10.6 10.6L10.6-10.6"/><path class="d2" d="M-10.6-10.6L10.6 10.6"/></svg>FOUND SCREENS</h1>
+<div class="panel"><p>Currently working to catalog and restore all recovered screens from recordings. <a href="https://drive.google.com/drive/folders/1HJzX15AHVYwWfI_IfGTlulh8Fp0AbUtZ?usp=drive_link">Click here</a> to see the progress!</p></div>
+</section>
+
+<!--
+<section><h1 id="amiga-recreation"><svg class="shine" viewBox="-17 -17 34 34" aria-hidden="true"><path d="M0-15V15M-15 0H15"/><path class="d1" d="M-10.6 10.6L10.6-10.6"/><path class="d2" d="M-10.6-10.6L10.6 10.6"/></svg>AMIGA SHOWCASE</h1>
+<div class="panel"><p class="soon">Coming soon.</p></div>
+</section>
+
+<section><h1 id="playable-version"><svg class="shine" viewBox="-17 -17 34 34" aria-hidden="true"><path d="M0-15V15M-15 0H15"/><path class="d1" d="M-10.6 10.6L10.6-10.6"/><path class="d2" d="M-10.6-10.6L10.6 10.6"/></svg>PLAYABLE VERSION</h1>
+<div class="panel"><p class="soon">Coming soon.</p></div>
+</section>
+--!>
+
+<section><h1 id="updates"><svg class="shine" viewBox="-17 -17 34 34" aria-hidden="true"><path d="M0-15V15M-15 0H15"/><path class="d1" d="M-10.6 10.6L10.6-10.6"/><path class="d2" d="M-10.6-10.6L10.6 10.6"/></svg>UPDATES</h1>
+<div class="panel"><p class="soon">Coming soon.</p></div>
+</section>
+
+<section><h1 id="contact"><svg class="shine" viewBox="-17 -17 34 34" aria-hidden="true"><path d="M0-15V15M-15 0H15"/><path class="d1" d="M-10.6 10.6L10.6-10.6"/><path class="d2" d="M-10.6-10.6L10.6 10.6"/></svg>CONTACT</h1>
+<div class="panel"><p>Got a memory, a recording, a screen, or a lead? Please <a href="mailto:donner.wimbly@gmail.com">Email me!</a></p></div>
+</section>
+</div></body></html>
