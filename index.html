@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CTV-i</title>
+<style>
+html,body{height:100%;margin:0;background:#63BDB5;}
+#frames{display:flex;height:100%}
+iframe{border:0;height:100%;background:#63BDB5}
+#map{flex:0 0 520px;width:520px;box-sizing:border-box}
+#info{flex:1 1 auto;min-width:0}
+/* narrow screens: stack the panes */
+@media (max-width:1100px){
+  #frames{flex-direction:column;height:auto}
+  iframe{height:100vh}
+  #map{flex:none;width:100%;border-right:0;border-bottom:1px solid #e8e4a5}
+  #info{flex:none;width:100%}
+}
+</style></head><body>
+<div id="frames">
+  <iframe id="map" name="map" src="ctvi.html" title="CTV-i map"></iframe>
+  <iframe id="info" name="info" src="ctviinfo.html" title="CTV-i info"></iframe>
+</div>
+</body></html>
